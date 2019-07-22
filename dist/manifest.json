@@ -1,0 +1,13 @@
+{
+    "name": "MotaCheng Data Visitor",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "permissions": [
+        "*://*/*", "webNavigation"
+    ],
+    "manifest_version": 2
+  }
