@@ -4,10 +4,20 @@
     "description": "Build an Extension!",
     "background": {
         "scripts": ["background.js"],
-        "persistent": true
+        "persistent": false
     },
+    "browser_action": {},
+    "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "js": ["contentScript.js"],
+          "run_at":"document_start"
+        }
+    ], 
     "permissions": [
-        "*://*/*", "webNavigation"
+        "*://*/*",
+        "webNavigation",
+        "storage"
     ],
     "manifest_version": 2
   }
